@@ -13,6 +13,7 @@ int main(void)
     /* Replace with your application code */
     DDRD = 0xff;
 	PORTD = 0xff;
+	PORTF = 0xff;
 	
 	while (1) 
     {
@@ -26,6 +27,7 @@ int main(void)
 			PORTD = ~(0x80 >> j);
 			_delay_ms(500);
 		}
+		
 		
 // 		PORTD = 0x00;
 // 		_delay_ms(500);
